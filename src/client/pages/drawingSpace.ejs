@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Test</title>
+    <%- include('../partials/head'); %>
+</head>
+
+<body>
+    <header>
+        <%- include('../partials/nav'); %>
+    </header>
+    <div id="container" style="height: 950px;">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="100%" style="background-color: lightgray;"
+            id="svgContainer">
+            <defs id="patterns"> </defs>
+            <g id="drawingSpace">
+                <rect id="gridPattern" width="1000000" height="1000000" x="-500000" y="-500000" fill="url(#grid)" />
+            </g>
+
+        </svg>
+        <div id="rightPanel"></div>
+    </div>
+
+    <!-- Internal Resources -->
+    <script src="static/drawingSpace.js"></script>
+</body>
+
+</html>
